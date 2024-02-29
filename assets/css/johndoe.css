@@ -11830,7 +11830,7 @@ pre .code {
 }
 
 .resume-section .card{
-  height: 459px;
+  height: 500px;
 }
 /*= Skills */
 
@@ -11961,7 +11961,8 @@ pre .code {
 
 /*----- For Language Section -----*/
 .language-card{
-  margin-top: -1rem;
+  top: -17px;
+  position: relative;
 }
 .language-card .card-body{
   margin: 0 0 9px;
