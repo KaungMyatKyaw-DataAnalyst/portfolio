@@ -5082,7 +5082,8 @@ input[type="button"].btn-block {
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 1.25rem;
+  /* padding: 1.25rem; */
+  padding:0 1rem;
 }
 
 .card-title {
@@ -11008,7 +11009,7 @@ p {
 
 .line {
   display: block;
-  width: 25px;
+  width: 75px;
   height: 1.5px;
   background-color: #F85C70;
 }
@@ -11509,7 +11510,7 @@ pre .code {
 .header {
   position: relative;
   height: 80vh;
-  min-height: 600px;
+  min-height: 400px;
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/BGNew.jpg);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/BGNew.jpg);
   background-size: cover;
@@ -11604,7 +11605,8 @@ pre .code {
 }
 
 .section {
-  padding: 80px 0;
+  /* padding: 80px 0; */
+  padding: 35px 0;
 }
 
 .section.bg-custom-gray {
@@ -11616,7 +11618,8 @@ pre .code {
 }
 
 .about-section .about-card {
-  padding: 60px;
+  /* padding: 60px; */
+  padding: 60px 60px 30px;
   border-right: 1px solid #dee2e6;
 }
 
@@ -11685,4 +11688,342 @@ pre .code {
   background: #F85C70;
   display: block;
   margin-top: 10px;
+}
+
+/* ------ Custom CSS ---------- */
+.expertise {
+  padding-left: 0;
+}
+
+.expertise li {
+  margin-bottom: 7px;
+  font-size: 15px;
+  color: #333; /* Adjust the color as needed */
+  list-style: none;
+}
+
+.ti-control-record:before {
+  content: "\e724";
+  color: #F85C70;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.about-card .info li{
+  padding-bottom: 12px;
+}
+
+/* ---- Experience CSS ----- */
+
+.experience-list {
+  margin-top: 14px;
+}
+
+.experience {
+  margin-bottom: 30px;
+}
+
+.experience h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.experience p {
+  margin-bottom: 5px;
+}
+
+.experience ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.experience-section{
+  padding: 23px 0 0;
+}
+.experience {
+  /* margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9; */
+}
+
+.experience-header {
+  margin-bottom: 10px;
+}
+
+.experience-header h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.experience-header .company {
+  font-size: 16px;
+  color: #666;
+}
+
+.experience-header .duration {
+  font-size: 14px;
+  color: #999;
+}
+.resume-container{
+  padding: 5px 0;
+}
+
+/* ----- Education----- */
+.education-card {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.education-header {
+  margin-bottom: 10px;
+}
+
+.education-header h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.education-body {
+  padding: 10px 0;
+}
+
+.education-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000; /* Red color */
+}
+
+.education-subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/*------- Certificate Lists Section -------*/
+.certificate-list li{
+  padding: 3px 3px;
+  list-style:circle;
+}
+.certificate-list li::marker {
+  color: cadetblue;
+}
+.certificate-list li a{
+  font-weight: bold;
+  color: cadetblue;
+  font-size: 15px;
+}
+
+.certificate-list li a:hover{
+  color:rgba(0, 0, 0, 0.8);
+}
+
+.skill-name{
+  margin-bottom: 7px;
+}
+
+.resume-section .card{
+  height: 459px;
+}
+/*= Skills */
+
+.skillbar-wrapper {
+  /* margin: 1.5em auto; */
+  margin:5px auto;
+  max-width: 960px;
+}
+
+.skillbar {
+  position:relative;
+  margin-bottom: 9px;
+  width: 100%;
+  background: #eee;
+  height: 30px;
+  border-radius: 3px; 
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin: 0;
+}
+
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height:30px;
+  line-height: 30px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height: 30px;
+  width: 0%;
+  border-radius: 3px;
+  transition: 500ms linear;
+  transition-property: width, background-color;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: rgba( 0, 0, 0, 0.4 );
+  transition: color 500ms ease-out;
+}
+
+.complete .skill-bar-percent {
+  color: #fff;
+}
+
+.complete.server .skill-bar-percent {
+  color: #333;
+}
+
+.html5 .skillbar-title {
+  background: #d35400;  
+}
+
+.html5 .skillbar-bar {
+  background: #e67e22;  
+}
+
+
+.css .skillbar-title {
+  background: #2980b9;  
+}
+
+.css .skillbar-bar {
+  background: #3498db;  
+}
+
+.javascript .skillbar-title {
+  background: #fac552;
+}
+.javascript .skillbar-bar {
+  background: #f1ac18;
+}
+
+.jquery .skillbar-title {
+  background: #2c3e50;  
+}
+
+.jquery .skillbar-bar {
+  background: #2c3e50;  
+}
+
+.php .skillbar-title {
+  background: #46465e;  
+}
+
+.php .skillbar-bar {
+  background: #5a68a5;  
+}
+
+.wordpress .skillbar-title {
+  background: #333333;  
+}
+
+.wordpress .skillbar-bar {
+  background: #525252;  
+}
+
+.server .skillbar-title {
+  background: #5e2750;  
+}
+
+.server .skillbar-bar {
+  background: #d43227;  
+}
+.project-containter{
+  padding: 9px 0;
+  background-color: #232e3f;
+}
+
+/*----- For Language Section -----*/
+.language-card{
+  margin-top: -1rem;
+}
+.language-card .card-body{
+  margin: 0 0 9px;
+}
+
+.skills,
+.skills .skill,
+.skills .skill .skill-title,
+.skills .skill .skill-bar {
+   width: 100%;
+   float: left;
+}
+
+.skills {
+   padding:0px 15px;
+}
+
+.skills .skill {
+   margin-bottom: 10px;
+}
+
+.skills .skill .skill-title {
+   color: #808080;
+   margin-bottom: 5px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.skills .skill .skill-bar {
+   width: 0;
+   height: 6px;
+   background: #f0f0f0;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+}
+
+.skills.active .skill .skill-bar {
+   width: 100%;
+}
+
+.skills .skill .skill-bar span {
+   float: left;
+   width: 0%;
+   /* background: #1D91F2; */
+   background: #F85C70 ;
+   height: 6px;
+   position: relative;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+}
+
+.skills .skill .skill-bar span b {
+   float: left;
+   width: 100%;
+   position: relative;
+   text-align: right;
+   opacity: 0;
+   font-size: 14px;
+   /* color: #1D91F2; */
+   color:#F85C70;
+   font-weight: 400;
+   top: -18px;
 }
