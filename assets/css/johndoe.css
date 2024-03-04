@@ -11656,6 +11656,10 @@ pre .code {
   .contact .contact-info-card {
     min-height: auto !important;
   }
+  .rco-letter{
+   top: 7px;
+   position: relative;
+  }
 }
 
 .contact .map {
